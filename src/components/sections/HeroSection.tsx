@@ -18,72 +18,94 @@ const HeroSection = () => {
       }} />
 
       <div className="container relative z-10 px-6 py-20 md:py-32">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Overline */}
-          <div 
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-8 animate-fade-up"
-            style={{ animationDelay: "0.1s" }}
-          >
-            <Briefcase className="w-4 h-4" />
-            Business Postgraduate
-          </div>
-
-          {/* Name */}
-          <h1 
-            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-up"
-            style={{ animationDelay: "0.2s" }}
-          >
-            Your Name
-          </h1>
-
-          {/* Tagline */}
-          <p 
-            className="text-lg md:text-xl text-muted-foreground font-medium mb-4 animate-fade-up"
-            style={{ animationDelay: "0.3s" }}
-          >
-            Strategy • Analysis • Operations
-          </p>
-
-          {/* Description */}
-          <p 
-            className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up"
-            style={{ animationDelay: "0.4s" }}
-          >
-            Business postgraduate with a strong analytical mindset, focused on solving 
-            real-world business problems through data-driven insights, strategic thinking, 
-            and practical recommendations.
-          </p>
-
-          {/* CTA Buttons */}
-          <div 
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up"
-            style={{ animationDelay: "0.5s" }}
-          >
-            <Button
-              size="lg"
-              className="gap-2 px-8 bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft"
-              onClick={() => scrollToSection("#projects")}
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            {/* Image */}
+            <div 
+              className="relative flex-shrink-0 animate-fade-up"
+              style={{ animationDelay: "0.1s" }}
             >
-              <Briefcase className="w-4 h-4" />
-              View Projects
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="gap-2 px-8 border-border hover:bg-secondary"
-            >
-              <FileText className="w-4 h-4" />
-              Download CV
-            </Button>
-            <Button
-              size="lg"
-              variant="ghost"
-              className="gap-2 text-muted-foreground hover:text-foreground"
-              onClick={() => scrollToSection("#contact")}
-            >
-              <Mail className="w-4 h-4" />
-              Contact Me
-            </Button>
+              <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary/20 shadow-soft bg-secondary">
+                {/* Replace src with your actual image */}
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Your Name - Professional headshot"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Decorative ring */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/10 scale-110" />
+            </div>
+
+            {/* Content */}
+            <div className="flex-1 text-center lg:text-left">
+              {/* Overline */}
+              <div 
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-up"
+                style={{ animationDelay: "0.2s" }}
+              >
+                <Briefcase className="w-4 h-4" />
+                Business Postgraduate
+              </div>
+
+              {/* Name */}
+              <h1 
+                className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-4 animate-fade-up"
+                style={{ animationDelay: "0.3s" }}
+              >
+                Your Name
+              </h1>
+
+              {/* Tagline */}
+              <p 
+                className="text-lg md:text-xl text-muted-foreground font-medium mb-4 animate-fade-up"
+                style={{ animationDelay: "0.4s" }}
+              >
+                Strategy • Analysis • Operations
+              </p>
+
+              {/* Description */}
+              <p 
+                className="text-base md:text-lg text-muted-foreground max-w-2xl mb-8 leading-relaxed animate-fade-up"
+                style={{ animationDelay: "0.5s" }}
+              >
+                Business postgraduate with a strong analytical mindset, focused on solving 
+                real-world business problems through data-driven insights, strategic thinking, 
+                and practical recommendations.
+              </p>
+
+              {/* CTA Buttons */}
+              <div 
+                className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 animate-fade-up"
+                style={{ animationDelay: "0.6s" }}
+              >
+                <Button
+                  size="lg"
+                  className="gap-2 px-8 bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft"
+                  onClick={() => scrollToSection("#projects")}
+                >
+                  <Briefcase className="w-4 h-4" />
+                  View Projects
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="gap-2 px-8 border-border hover:bg-secondary"
+                >
+                  <FileText className="w-4 h-4" />
+                  Download CV
+                </Button>
+                <Button
+                  size="lg"
+                  variant="ghost"
+                  className="gap-2 text-muted-foreground hover:text-foreground"
+                  onClick={() => scrollToSection("#contact")}
+                >
+                  <Mail className="w-4 h-4" />
+                  Contact Me
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
 
