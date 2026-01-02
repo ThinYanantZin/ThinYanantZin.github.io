@@ -50,7 +50,7 @@ const Navbar = () => {
             }}
             className="font-display text-xl md:text-2xl font-semibold text-foreground hover:text-primary transition-colors"
           >
-            Portfolio
+            Thin Yanant Zin
           </a>
 
           {/* Desktop Navigation */}

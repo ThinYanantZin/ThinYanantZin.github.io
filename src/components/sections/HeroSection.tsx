@@ -28,7 +28,7 @@ const HeroSection = () => {
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary/20 shadow-soft bg-secondary">
                 {/* Replace src with your actual image */}
                 <img 
-                  src="/placeholder.svg" 
+                  src="/Rui.jpg" 
                   alt="Your Name - Professional headshot"
                   className="w-full h-full object-cover"
                 />
@@ -53,7 +53,7 @@ const HeroSection = () => {
                 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-4 animate-fade-up"
                 style={{ animationDelay: "0.3s" }}
               >
-                Your Name
+                Thin Yanant Zin (Rui)
               </h1>
 
               {/* Tagline */}

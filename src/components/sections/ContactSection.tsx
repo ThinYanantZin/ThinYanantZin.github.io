@@ -26,14 +26,14 @@ const ContactSection = () => {
                 {/* Contact Links */}
                 <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
                   <a
-                    href="mailto:yourname@email.com"
+                    href="mailto:2020thinyanantzin@gmail.com"
                     className="flex items-center gap-3 px-6 py-4 rounded-xl bg-secondary hover:bg-secondary/80 transition-colors w-full sm:w-auto"
                   >
                     <Mail className="w-5 h-5 text-primary" />
-                    <span className="text-foreground font-medium">yourname@email.com</span>
+                    <span className="text-foreground font-medium">2020thinyanantzin@gmail.com</span>
                   </a>
                   <a
-                    href="https://linkedin.com/in/yourname"
+                    href="https://linkedin.com/in/thinn-yanant-zin-ab24912b2"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 px-6 py-4 rounded-xl bg-secondary hover:bg-secondary/80 transition-colors w-full sm:w-auto"
